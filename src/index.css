@@ -11,20 +11,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222;
+  background-image:url(./assets/Gif/backroundmain.jpg);
+}
+#winner-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.winner-message {
+  font-size: 3rem;
+  color: #ff6347; /* Or any color you prefer */
 }
 
 #main-container {
   position: relative;
   width: 800px;
   height: 500px;
-  border: 2px solid #444;
-  background-color: #333;
   overflow: hidden;
 }
 
 #main-img {
-  width: 200px;
+  width:400px;
   position: absolute;
   bottom:100px;
   image-rendering: pixelated;
@@ -32,7 +50,7 @@ body {
   margin: auto;
 }
 #main-img1 {
-  width:250px;
+  width:400px;
   position: absolute;
   bottom: 100px;
   image-rendering: pixelated;
