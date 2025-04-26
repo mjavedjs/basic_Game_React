@@ -114,7 +114,7 @@ function App() {
 
   useEffect(() => {
     if (!gameOver) {
-      const enemyInterval = setInterval(enemyAction, 2000);
+      const enemyInterval = setInterval(enemyAction, 3500);
       return () => clearInterval(enemyInterval);
     }
   }, [enemyscore, gameOver]);
